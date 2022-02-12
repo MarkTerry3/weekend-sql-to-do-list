@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <h1>To-Do List</h1>
+    <!-- <h1>To-Do List</h1>
 
     <br>
 
@@ -19,9 +19,69 @@
         <h2>Add Task</h2>
         <input type="text" id="taskIn" value="" placeholder="Task">
         <label for="Due By"> Due By </label>
-        <input type="date" id="dueByIn" name="Due By">
+        <input type="text" id="dueByIn" name="Due By" placeholder="mm/dd/yyyy">
         <button type="button" id="addButton">Add Task</button>
       </section>
+
+      <main>
+
+      <section>
+        <h2>All Tasks</h2>
+        <table>
+          <thead>
+            <tr>
+              <th class="thead">Task</th>
+              <th class="thead">Due By</th>
+              <th class="thead">Completed?</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="viewTasks">
+      
+              <tr>
+                  <td>Dishes</td>
+                  <td>2-23-22</td>
+                  <td>True</td>
+                  <td>
+                      <button>Delete</button>
+                  </td>
+              </tr>
+         
+          </tbody>
+        </table>
+      </section>
+    </main> -->
+
+    <header>
+        <h1>To Do List</h1>
+      </header>
+      <main>
+        <section>
+          <h2>Add New Task</h2>
+          <label>Task</label><input type="text" name="" value="" id="taskIn" size="50" placeholder="Dishes">
+          <br />
+          <label>Due By:</label><input type="text" name="" value="" id="dueByIn" size="50" placeholder="mm/dd/yyyy">
+          <br />
+          <button type="button" id="addButton">Add Task</button>
+        </section>
+        <section>
+          <div>
+            <h3>Tasks</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Task</th>
+                  <th>Due By</th>
+                  <th>Completed?</th>
+                </tr>
+              </thead>
+              <tbody id="viewTasks">
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
     
 </body>
 </html>

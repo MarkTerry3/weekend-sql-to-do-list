@@ -1,10 +1,11 @@
-* {
+/* * {
     background-color: #212121;
     font-family: sans-serif;
-}
+} */
 
 body {
     text-align: center;
+    background-color: #212121;
 }
 
 
@@ -12,11 +13,11 @@ h1 {
     /* color: white; */
     text-align: center;
     /* color: #696969; */
-    color: #bebebe;
+    color: white;
 }
 
 h2 {
-    color: #bebebe;
+    color: white;
 }
 
 
@@ -31,10 +32,23 @@ label {
 
 
 input {
-    background-color: #bebebe;
+    background-color: white;
     color: black;
 }
 
 button {
-    background-color: #bebebe;
+    background-color: white;
+}
+
+#viewTasks {
+    color: white;
+}
+
+.thead {
+    color: white;
+}
+
+.green {
+    background-color: green;
+    color: purple;
 }
