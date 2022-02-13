@@ -97,7 +97,7 @@ function renderTasks(tasks) {
         `);
         }else  {
             $('#viewTasks').append(`
-          <tr data-id=${task.id}>
+          <tr data-id=${task.id} class="plain">
             <td>${task.task}</td>
             <td>${task.dueBy}</td>
             <td>${task.completed}</td>
@@ -106,16 +106,6 @@ function renderTasks(tasks) {
           </tr>
         `);
         }
-        
-        // $('#viewTasks').append(`
-        //   <tr data-id=${task.id}>
-        //     <td>${task.task}</td>
-        //     <td>${task.dueBy}</td>
-        //     <td>${task.completed}</td>
-        //     <td><button class="btn-isComplete" data-id=${tasks[i].id}>Mark as Complete ✅</button>
-        //     <td><button class="btn-delete" data-id=${tasks[i].id}>Delete ❌</button></td>
-        //   </tr>
-        // `);
       }
 
     
