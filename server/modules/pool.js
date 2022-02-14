@@ -27,5 +27,5 @@ toDoPool.on('error', (err) => {
 })
 
 
-module.exports = toDoPool;heroku open
+module.exports = toDoPool;
 
