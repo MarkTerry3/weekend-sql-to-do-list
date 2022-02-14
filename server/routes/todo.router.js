@@ -15,8 +15,7 @@ toDoRouter.get("/", (req, res) => {
     // }
     let queryText = `SELECT * FROM "to-do"`;
     console.log("GETTING?!");
-    pool
-      .query(queryText)
+    pool.query(queryText)
       .then((result) => {
         res.send(result.rows);
       })
@@ -101,7 +100,7 @@ toDoRouter.put('/:id', (req, res) =>{
   
       
       // the sqlText is what were sending to the db, and the database is like ok i got a $1, so you also have to send
-      // what the user input which is in this case "sqlValues"
+      // what the user input which is in this case "sqlText"
       // this is how we sanitize our sql queries so nobody can act maliciously
       // pool.query is passing this to the database
     pool.query(sqlText, sqlValues)

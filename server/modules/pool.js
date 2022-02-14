@@ -4,7 +4,7 @@ const pg = require('pg');
 
 // database pool options
 let poolOptions = {
-    database: 'weekend-to-do-app',
+    database: process.env.DATABASE_NAME || 'weekend-to-do-app',
     host: 'localhost',
     max: 10,
     // database on port 5432
@@ -27,5 +27,5 @@ toDoPool.on('error', (err) => {
 })
 
 
-module.exports = toDoPool;
+module.exports = toDoPool;heroku open
 
